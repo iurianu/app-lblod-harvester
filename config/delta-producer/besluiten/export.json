@@ -215,7 +215,8 @@
         "http://data.europa.eu/m8g/hasCompetentAuthority",
         "http://purl.org/dc/terms/requires",
         "http://data.europa.eu/m8g/hasCost",
-        "http://data.europa.eu/m8g/hasLegalResource"
+        "http://data.europa.eu/m8g/hasLegalResource",
+        "http://www.w3.org/2002/07/owl#sameAs"
       ]
     },
     {
@@ -226,7 +227,8 @@
         "http://mu.semte.ch/vocabularies/core/uuid",
         "http://purl.org/dc/terms/description",
         "https://data.europa.eu/m8g/costBreakdown",
-        "https://data.europa.eu/m8g/value"
+        "https://data.europa.eu/m8g/value",
+        "http://www.w3.org/2002/07/owl#sameAs"
       ]
     }
   ]
