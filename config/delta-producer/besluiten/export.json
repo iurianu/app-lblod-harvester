@@ -203,6 +203,31 @@
         "http://www.w3.org/ns/prov#atLocation",
         "http://www.w3.org/2002/07/owl#sameAs"
       ]
+    },
+    {
+      "type": "http://purl.org/vocab/cpsv#PublicService",
+      "graphsFilter": [ "http://mu.semte.ch/graphs/public" ],
+      "properties": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "http://mu.semte.ch/vocabularies/core/uuid",
+        "http://purl.org/dc/terms/description",
+        "http://purl.org/dc/terms/title",
+        "http://data.europa.eu/m8g/hasCompetentAuthority",
+        "http://purl.org/dc/terms/requires",
+        "http://data.europa.eu/m8g/hasCost",
+        "http://data.europa.eu/m8g/hasLegalResource"
+      ]
+    },
+    {
+      "type": "https://belgif.github.io/thematic/models/public%20services/index_en.html#Cost",
+      "graphsFilter": [ "http://mu.semte.ch/graphs/public" ],
+      "properties": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "http://mu.semte.ch/vocabularies/core/uuid",
+        "http://purl.org/dc/terms/description",
+        "https://data.europa.eu/m8g/costBreakdown",
+        "https://data.europa.eu/m8g/value"
+      ]
     }
   ]
 }

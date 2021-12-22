@@ -230,7 +230,7 @@ services:
     restart: always
     logging: *default-logging
   delta-producer-publication-graph-maintainer-besluiten:
-    image: lblod/delta-producer-publication-graph-maintainer:0.5.0-beta.1
+    image: lblod/delta-producer-publication-graph-maintainer:0.9.2
     environment:
       MAX_BODY_SIZE: "50mb"
       JOBS_GRAPH: "http://mu.semte.ch/graphs/harvesting"
@@ -240,6 +240,8 @@ services:
       INITIAL_PUBLICATION_GRAPH_SYNC_JOB_OPERATION: "http://redpencil.data.gift/id/jobs/concept/JobOperation/deltas/initialPublicationGraphSyncing/besluiten"
       QUEUE_POLL_INTERVAL: 3000
       USE_VIRTUOSO_FOR_EXPENSIVE_SELECTS: "true"
+      HEALING_PATCH_GRAPH_BATCH_SIZE: 500
+      UPDATE_PUBLICATION_GRAPH_SLEEP: 200
     volumes:
       - ./config/delta-producer/besluiten:/config
       - ./data/files/:/share
